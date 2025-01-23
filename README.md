@@ -15,15 +15,15 @@ The following are the basic requirements to **start** the setup.
 1. Login to AWS Portal at https://portal.aws.amazon.com.
 2. Open the AWS CloudShell.
 
-   ![279217916-a1f0b555-018d-488f-8d8c-975b5c391ede](https://github.com/user-attachments/assets/14c5da22-3a45-4945-a0d7-686b338a69ab)
+   ![279217916-a1f0b555-018d-488f-8d8c-975b5c391ede](https://github.com/user-attachments/assets/7c85ca4a-53a6-4f63-a4ab-af685a62c5d8)
 
-3. Install the bash-completion on the AWS CloudShell.
+4. Install the bash-completion on the AWS CloudShell.
 
    ```bash
    sudo yum -y install bash-completion
    ```
 
-4. Configure the kubectl autocomplete.
+5. Configure the kubectl autocomplete.
 
    ```bash
    source <(kubectl completion bash) # set up autocomplete in bash into the current shell, bash-completion package should be installed first.
@@ -40,7 +40,7 @@ The following are the basic requirements to **start** the setup.
    /bin/bash
    ```
 
-5. Install the eksctl - [Installation instructions](https://docs.aws.amazon.com/eks/latest/userguide/eksctl.html)
+6. Install the eksctl - [Installation instructions](https://docs.aws.amazon.com/eks/latest/userguide/eksctl.html)
 
    ```bash
    mkdir ~/.local/bin
@@ -48,7 +48,7 @@ The following are the basic requirements to **start** the setup.
    sudo mv /tmp/eksctl ~/.local/bin && eksctl version 
    ```
 
-6. Install the K9S, if you like it.
+7. Install the K9S, if you like it.
 
    ```bash
    curl --silent --location "https://github.com/derailed/k9s/releases/download/v0.32.7/k9s_Linux_amd64.tar.gz" | tar xz -C /tmp
